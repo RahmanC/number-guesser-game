@@ -5,7 +5,7 @@ interface IGuessForm {
   attempts: number;
   guessesLeft: number;
   gameOver: boolean;
-  handleGuess: () => void;
+  handleGuess: (e) => void;
 }
 
 interface IButton {
@@ -13,4 +13,12 @@ interface IButton {
   onClick?: () => void;
   className?: string;
   disabled?: boolean;
+  type?: "submit" | "button" | "reset";
+}
+
+interface IGameState {
+  secretNumber: number;
+  attempts: number;
+  guessesLeft: number;
+  gameOver: boolean;
 }
