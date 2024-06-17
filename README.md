@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+## the number guesser game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Number Guesser is a simple React application. In this game, players attempt to guess a randomly generated number between 1 and 100 within 10 attempts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Random number generation between 1 and 100
+- User input for guesses
+- Feedback on each guess (guess too high, guess too low, or correct guess)
+- Limited number of attempts (10)
+- Option to start a new game
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React + Vite
+- TypeScript
+- Tailwind CSS
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Setup and Installation
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies
+
+## **How to run the project**
+
+### _Install modules:_
+
+```bash
+yarn
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### _Start dev server:_
+
+```bash
+yarn dev
+```
+
+_Project will run on [http://127.0.0.1:5173/](http://127.0.0.1:5173/)_
+
